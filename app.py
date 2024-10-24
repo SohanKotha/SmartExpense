@@ -23,7 +23,6 @@ from flask_login import (
 import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
-import secrets
 import re
 import os
 import csv
@@ -39,7 +38,6 @@ from flask_session import Session
 from itsdangerous import URLSafeTimedSerializer, SignatureExpired, BadSignature
 from email.mime.text import MIMEText
 from apscheduler.schedulers.background import BackgroundScheduler
-import atexit
 from flask_login import login_required
 
 
